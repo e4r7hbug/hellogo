@@ -1,3 +1,6 @@
+/*
+Package hellogo represents a fun Go toy program.
+*/
 package main
 
 import (
