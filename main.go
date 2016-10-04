@@ -6,4 +6,5 @@ import (
 
 func main() {
 	fmt.Printf("Hellow!\n")
+	Library1Printer()
 }
