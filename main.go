@@ -5,17 +5,18 @@ package main
 
 import (
 	"fmt"
-	"github.com/Sirupsen/logrus"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/Sirupsen/logrus"
 )
 
 var (
 	log = logrus.New()
 
-	request_bad    = "https://this.will.not.work"
-	request_not_ok = "https://httpbin.org/status/404"
-	request_good   = "https://ifconfig.co"
+	requestBad   = "https://this.will.not.work"
+	requestNotOk = "https://httpbin.org/status/404"
+	requestGood  = "https://ifconfig.co"
 )
 
 func init() {
@@ -29,9 +30,9 @@ func main() {
 		log.WithField("level", log.Level).Info("Debug logging turned off.")
 	}
 
-	Get(request_bad)
-	Get(request_not_ok)
-	Get(request_good)
+	Get(requestBad)
+	Get(requestNotOk)
+	Get(requestGood)
 
 	Library1Printer()
 }
